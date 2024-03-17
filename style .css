@@ -1,0 +1,462 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: #fff;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    background-color: black;
+    padding: 0.5rem;
+}
+.sidebar {
+    background-color: #000;
+    width: 25.7rem;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.main-content {
+    background: linear-gradient(#232323, #121212, #121212);
+    flex: 1;
+    border-radius: 0.5rem;
+    overflow: auto;
+    height: 84.43%;
+}
+
+.music-player {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5.5rem;
+}
+
+a {
+    text-decoration:none;
+    color: white; 
+}
+
+.nav {
+    background-color: #121212;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 6rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option {
+    line-height: 2.5rem;
+    padding: 0.5rem 0.75rem;
+    font-weight: 750;
+}
+
+.nav-option:last-child {
+    opacity: 0.7;
+}
+
+.nav-option i {
+    font-size: 1.25rem;
+}
+
+.nav-option a {
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    font-weight: 650;
+}
+
+.nav-option:hover {
+    opacity: 1;
+}
+
+.lib-options i {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.library {
+    background-color: #121212;
+    border-radius: 0.5rem;
+    height: 62.5%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.5rem;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-option{
+    opacity: 0.7;
+}
+
+.lib-option:hover {
+    opacity: 1;
+}
+
+.icons {
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.icons i {
+    opacity: 0.7;
+    margin-right: 1rem;
+    padding: 0.25rem;
+    font-weight: 550;
+}
+
+.icons:hover i{
+    opacity: 1;
+    background-color: #171717;
+    padding: 0.25rem;
+    border-radius: 50%;
+}
+
+.box {
+    background-color: #232323;
+    height: 7.8rem;
+    border-radius: 0.55rem;
+    margin: 0 0 1.3rem 0;
+    padding: 0.5rem 1.25rem;
+}
+
+.box-p1 {
+    font-size: 0.92rem;
+    font-weight: 600;
+    margin: 0.85rem 0 1rem 0;
+}
+
+.box-p2 {
+    font-size: 0.80rem;
+    font-weight: 550;
+    opacity: 0.9;
+    margin: 1.1rem 0 0.9rem 0;
+}
+ .badge {
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    color: black;
+    margin-top: 0.4rem;
+    height: 2rem;
+    width: fit-content;
+}
+
+.dark-badge {
+    color: whitesmoke;
+    background-color: #00000083;
+}
+
+.sidebar .badge:hover {
+    transform: scale(1.02);
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(#000000a5, #00000080, #00000000);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 0;
+    z-index: 10;
+}
+
+.sticky-nav-icons i {
+    margin: 0.5rem 0 0 1rem;
+    font-size: 1.3rem;
+    padding: 0.5rem 0.75rem;
+    background-color: #00000083;
+    border-radius: 50%;
+}
+
+.sticky-nav-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 1rem;
+}
+.sticky-nav-options i:first-child {
+    font-size: 1rem;
+    margin-right: 4px;
+}
+
+.sticky-nav-options .i{
+    background-color: #00000083;
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin-top: 0.6rem;
+}
+
+@media (max-width: 1000px) {
+    .hide {
+        display: none;
+    }
+
+    .sticky-nav-icons i:last-child {
+
+        display: none;
+    }
+}
+
+.h2 {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.h2 a{
+    font-size: 0.8rem;
+    font-weight: 600;
+    opacity: 0.6;
+    margin: 1.5rem 1.5rem 1.15rem 0;
+}
+
+.card {
+    background-color: #171717;
+    width: 172px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 0.4rem;
+}
+
+.card-title {
+    font-weight: 700;
+    margin: 0.7rem 0 0 0;
+}
+
+.card-info {
+    font-size: 0.8rem;
+    opacity: 0.5;
+    margin: 0.4rem 0;
+    line-height: 1.4rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 650;
+    margin: 1.5rem 0 1.15rem 1.5rem;
+}
+
+.footer {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+
+.music-player {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.player-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.albums {
+    width: 25%;
+}
+
+.player {
+    width: 50%;
+}
+
+.control {
+    width: 25%;
+}
+
+.player-control-icons {
+    /* margin-right: 1.8rem; */
+    margin: 0 0.85rem;
+}
+
+.player-control-icons:first-child {
+    font-size: 1.1rem;
+    opacity: 0.5;
+    font-weight: 550;
+}
+
+.player-control-icons:nth-child(2) {
+    font-size: 1.3rem;
+    opacity: 0.7;
+}
+
+.player-control-icons:nth-child(3) {
+    font-size: 2rem;
+    opacity: 0.9;
+    margin-bottom: 0.3rem;
+    padding: 0.1rem;
+}
+
+.player-control-icons:nth-child(4) {
+    font-size: 1.3rem;
+    opacity: 0.7;
+}
+
+.player-control-icons:last-child {
+    font-size: 1.1rem;
+    opacity: 0.5;
+    font-weight: 550;
+}
+
+.player-control-icons:hover {
+    opacity: 1;
+}
+
+.player-control-icons:hover:nth-child(3) {
+    transform: scale(1.05);
+}
+
+.playback-bar  {
+    margin: 0.5rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.65rem;
+    opacity: 0.6;
+    overflow: visible;
+} 
+
+.progress-bar {
+    width: 70%;
+    margin: 0 0.3rem 0.3rem 0.3rem;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    overflow: visible;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    appearance: none;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+} 
+ 
+.control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control i {
+    color: #ddd;
+    margin: 0 0.8rem 0 0;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+.control .sound-bar {
+    margin: 0 -3.4rem 0 -0.3rem;
+    width: 6.15rem;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    overflow: visible;
+}
+
+
+.control .sound-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    height: 0.2rem;
+    appearance: none;
+    border-radius: 100px;
+}
+
+.control .sound-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -4.5px;
+}
+
+.control i:first-child {
+    padding: 0.22rem 0.2rem 0.2rem 0.3rem;
+    border: 2px solid #ddd;
+    font-size: 0.55rem;
+}
+
+.albums {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.albums img {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-left: -2.1rem;
+}
+
+.albums i {
+    opacity: 0.55;
+    margin: 0.2rem 0.5rem 0.5rem 0.6rem;
+    font-size: 1.1rem;
+}
+
+.albums span {
+    font-size: 1.3rem;
+    margin-bottom: -0.3rem;
+}
+
+p {
+    margin: 0.2rem 0.5rem 0.4rem 0.9rem;
+}
+
+p:first-child {
+    font-size: 0.83rem;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+p:last-child {
+    font-size: 0.6rem;
+    font-weight: 600;
+    opacity: 0.6;
+}
